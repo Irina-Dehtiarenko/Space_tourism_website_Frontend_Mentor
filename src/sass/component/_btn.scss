@@ -1,0 +1,23 @@
+.nav__btn {
+  display: block;
+  height: 100%;
+  @extend %text;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  border: none;
+
+  &:hover {
+    padding: 2.5rem 0;
+    border-bottom: 1.5px solid $color-light;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &--active {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid $color-light;
+  }
+}

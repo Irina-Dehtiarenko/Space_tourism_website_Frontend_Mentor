@@ -1,0 +1,58 @@
+%heading {
+  color: $color-lighter;
+  font-family: $text-large;
+}
+
+%text {
+  color: $color-lighter;
+  font-family: $text-small;
+}
+
+.heading-1 {
+  font-size: 15rem;
+  @extend %heading;
+}
+
+.heading-2 {
+  font-size: 10rem;
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 5.6rem;
+}
+
+.heading-4 {
+  font-size: 3.2rem;
+  @extend %heading;
+}
+.heading-5 {
+  font-size: 2.8rem;
+  color: $color-light;
+  font-family: $text-small;
+  letter-spacing: 4.75;
+}
+
+.subheading {
+  &--1 {
+    font-size: 2.8rem;
+    color: $color-lighter;
+    font-family: $text-large;
+  }
+
+  &--2 {
+    @extend %text;
+    font-size: 1.4rem;
+    letter-spacing: 2.35;
+  }
+}
+
+.btn-nav {
+}
+
+.body-text {
+  font-style: 1.8rem;
+  color: $color-light;
+  font-family: $text-small;
+}

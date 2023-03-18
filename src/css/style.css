@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 80vh; }
+
+span {
+  font-weight: bold; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  color: #ffffff;
+  font-family: "Bellefair", serif; }
+
+.subheading--2, .nav__btn {
+  color: #ffffff;
+  font-family: "Barlow Condensed", sans-serif; }
+
+.heading-1 {
+  font-size: 15rem; }
+
+.heading-2 {
+  font-size: 10rem; }
+
+.heading-3 {
+  font-size: 5.6rem; }
+
+.heading-4 {
+  font-size: 3.2rem; }
+
+.heading-5 {
+  font-size: 2.8rem;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.75; }
+
+.subheading--1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-family: "Bellefair", serif; }
+
+.subheading--2 {
+  font-size: 1.4rem;
+  letter-spacing: 2.35; }
+
+.body-text {
+  font-style: 1.8rem;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif; }
+
+.header {
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  align-items: center;
+  margin-top: 5rem; }
+  .header__logo-img {
+    margin-left: 3rem; }
+  .header__line {
+    height: 0.5px;
+    margin: 0 -2.5rem 0 5rem;
+    background-color: #d0d6f9;
+    z-index: 5; }
+  .header__nav {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 2rem;
+    padding: 0 10rem;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    list-style: none;
+    z-index: 1; }
+    .header__nav--item {
+      height: 100%; }
+
+.container-home-page {
+  background-image: url(../img/home/background-home-desktop.jpg);
+  background-size: cover; }
+
+.nav__btn {
+  display: block;
+  height: 100%;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  border: none; }
+  .nav__btn:hover {
+    padding: 2.5rem 0;
+    border-bottom: 1.5px solid #d0d6f9;
+    cursor: pointer;
+    opacity: 0.5; }
+  .nav__btn--active {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #d0d6f9; }
