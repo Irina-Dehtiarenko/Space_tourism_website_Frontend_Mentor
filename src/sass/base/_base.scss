@@ -11,6 +11,9 @@ html {
   // This defines what 1rem is
   font-size: 62.5%; //1rem = 10px;  10px/16px = 62.5%
 
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
   //   Below can be font-sizes for another screens
 }
 
@@ -18,6 +21,10 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20vh 80vh;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 20vh max-content;
+  }
 }
 
 span {

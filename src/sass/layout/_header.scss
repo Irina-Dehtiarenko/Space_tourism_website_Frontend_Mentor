@@ -24,14 +24,36 @@
     grid-template-columns: repeat(4, max-content);
     grid-gap: 2rem;
     padding: 0 10rem;
-
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     list-style: none;
     z-index: 1;
 
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+
     &--item {
       height: 100%;
+
+      span {
+        @media only screen and (max-width: $bp-large) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__nav-mob {
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+      margin-right: 3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

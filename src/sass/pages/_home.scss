@@ -1,6 +1,10 @@
 .container-home-page {
   background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url(../img/home/background-home-tablet.jpg);
+  }
 }
 
 .main-home {
@@ -9,15 +13,27 @@
   align-items: center;
   justify-content: center;
   grid-gap: 30vw;
+  margin: 5rem auto;
   z-index: 30;
 
   @media only screen and (max-width: $bp-largest) {
     grid-gap: 10vw;
   }
 
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(2, max-content);
+    align-items: center;
+    grid-gap: 8vw;
+  }
+
   &__description {
     display: grid;
     grid-gap: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      text-align: center;
+    }
   }
 
   h1 {
@@ -25,7 +41,9 @@
   }
 
   .explore {
-    z-index: 20;
+    @media only screen and (max-width: $bp-large) {
+      text-align: center;
+    }
 
     &__btn {
       width: 27.4rem;
@@ -43,18 +61,8 @@
 
       &:hover {
         outline: 10rem solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
       }
-
-      // &::before {
-      //   display: grid;
-      //   align-items:
-      //   content: "";
-      //   width: 45rem;
-      //   height: 45rem;
-      //   background-color: rgba(255, 255, 255, 0.1);
-      //   border-radius: 50%;
-      //   z-index: 1;
-      // }
     }
   }
 }
