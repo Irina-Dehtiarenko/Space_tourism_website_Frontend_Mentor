@@ -2,3 +2,59 @@
   background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
 }
+
+.main-home {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30vw;
+  z-index: 30;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-gap: 10vw;
+  }
+
+  &__description {
+    display: grid;
+    grid-gap: 3rem;
+  }
+
+  h1 {
+    padding-top: 2rem;
+  }
+
+  .explore {
+    z-index: 20;
+
+    &__btn {
+      width: 27.4rem;
+      height: 27.4rem;
+      margin-top: 8rem;
+      background-color: $color-lighter;
+      color: $color-primary;
+      font-size: 3.2rem;
+      font-family: $text-large;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 50%;
+      z-index: 20;
+      transition: all 0.4s;
+
+      &:hover {
+        outline: 10rem solid rgba(255, 255, 255, 0.1);
+      }
+
+      // &::before {
+      //   display: grid;
+      //   align-items:
+      //   content: "";
+      //   width: 45rem;
+      //   height: 45rem;
+      //   background-color: rgba(255, 255, 255, 0.1);
+      //   border-radius: 50%;
+      //   z-index: 1;
+      // }
+    }
+  }
+}

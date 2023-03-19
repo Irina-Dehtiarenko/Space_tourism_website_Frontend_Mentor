@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: min-content 1fr max-content;
   align-items: center;
-  margin-top: 5rem;
+  //   margin-top: 1rem;
   &__logo-img {
     margin-left: 3rem;
   }
@@ -11,7 +11,12 @@
     height: 0.5px;
     margin: 0 -2.5rem 0 5rem;
     background-color: $color-light;
+    opacity: 0.25;
     z-index: 5;
+
+    @media only screen and (max-width: $bp-largest) {
+      background-color: transparent;
+    }
   }
 
   &__nav {
