@@ -44,16 +44,75 @@
     }
   }
 
+  //nav-open version 2 with animation
+
   &__nav-mob {
     display: none;
+    background-color: transparent;
+    border: none;
+    margin-right: 3rem;
 
     @media only screen and (max-width: $bp-small) {
       display: block;
-      margin-right: 3rem;
+    }
 
-      &:hover {
-        cursor: pointer;
+    &-item {
+      position: relative;
+      margin-top: 1rem;
+
+      &::before,
+      &::after,
+      & {
+        width: 4rem;
+        height: 2.5px;
+        background-color: $color-light;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+
+      &::before {
+        top: -1rem;
+      }
+      &::after {
+        top: 1rem;
       }
     }
   }
+
+  // nav-close
+  .onclick {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(135deg);
+      top: 0;
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+
+  // version 1
+
+  // &__nav-mob {
+  //   display: none;
+
+  //   @media only screen and (max-width: $bp-small) {
+  //     display: block;
+  //     margin-right: 3rem;
+
+  //     &:hover {
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
 }

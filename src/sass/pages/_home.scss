@@ -59,9 +59,17 @@
       z-index: 20;
       transition: all 0.4s;
 
+      @media only screen and (max-width: $bp-small) {
+        width: 20rem;
+        height: 20rem;
+      }
       &:hover {
         outline: 10rem solid rgba(255, 255, 255, 0.1);
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-small) {
+          outline: 7rem solid rgba(255, 255, 255, 0.1);
+        }
       }
     }
   }
