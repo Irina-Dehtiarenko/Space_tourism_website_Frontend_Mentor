@@ -76,8 +76,14 @@ span {
   display: grid;
   grid-template-columns: min-content 1fr max-content;
   align-items: center; }
+  @media only screen and (max-width: 34.375em) {
+    .header {
+      align-items: start; } }
   .header__logo-img {
     margin-left: 3rem; }
+    @media only screen and (max-width: 34.375em) {
+      .header__logo-img {
+        margin-top: 6rem; } }
   .header__line {
     height: 0.5px;
     margin: 0 -2.5rem 0 5rem;
@@ -101,20 +107,28 @@ span {
         display: none; } }
     .header__nav--item {
       height: 100%; }
+      @media only screen and (max-width: 34.375em) {
+        .header__nav--item button {
+          font-size: 2rem; } }
       @media only screen and (max-width: 56.25rem) {
-        .header__nav--item span {
+        .header__nav--item button span {
           display: none; } }
   .header__nav-mob {
     display: none;
     background-color: transparent;
     border: none;
     margin-right: 3rem; }
+    .header__nav-mob:hover {
+      cursor: pointer; }
     @media only screen and (max-width: 34.375em) {
       .header__nav-mob {
         display: block; } }
     .header__nav-mob-item {
       position: relative;
       margin-top: 1rem; }
+      @media only screen and (max-width: 34.375em) {
+        .header__nav-mob-item {
+          margin-top: 8rem; } }
       .header__nav-mob-item::before, .header__nav-mob-item::after, .header__nav-mob-item {
         width: 4rem;
         height: 2.5px;
@@ -130,13 +144,31 @@ span {
       .header__nav-mob-item::after {
         top: 1rem; }
   .header .onclick {
-    background-color: transparent; }
+    background-color: transparent;
+    z-index: 80; }
     .header .onclick::before {
       transform: rotate(135deg);
       top: 0; }
     .header .onclick::after {
       top: 0;
       transform: rotate(-135deg); }
+  .header .nav-mobile {
+    z-index: 50; }
+    .header .nav-mobile .header__nav {
+      display: none; }
+      @media only screen and (max-width: 34.375em) {
+        .header .nav-mobile .header__nav {
+          display: grid;
+          grid-template-rows: repeat(4, max-content);
+          grid-template-columns: auto;
+          width: 66.6vw;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          padding-top: 20rem; } }
+      .header .nav-mobile .header__nav span {
+        display: inline; }
 
 .container-home-page {
   background-image: url(../img/home/background-home-desktop.jpg);
