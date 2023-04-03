@@ -14,6 +14,10 @@
   font-weight: 300;
   line-height: 15rem;
   text-transform: uppercase;
+
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 12rem;
+  // }
 }
 
 .heading-2 {
@@ -36,9 +40,16 @@
   font-family: $text-small;
   font-weight: 300;
   letter-spacing: 4.75px;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 2rem;
+  }
 }
 
 .subheading {
+  text-transform: uppercase;
+
   &--1 {
     font-size: 2.8rem;
     color: $color-lighter;

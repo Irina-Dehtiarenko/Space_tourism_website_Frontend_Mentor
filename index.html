@@ -31,7 +31,10 @@
   </head>
   <body>
     <!-- home page -->
-    <div class="container container-home-page">
+    <!-- <div class="container container-home-page"> -->
+    <!-- destination page
+       -->
+    <div class="container container-destination-page">
       <header class="header header--home">
         <!-- <svg class="header__logo--icon">
       <use href="src/img/icons/logo.svg"></use>
@@ -61,34 +64,31 @@
           alt="icon for mobile navigation"
         /> -->
 
-        <nav class="nav-mobile">
-          <!-- <nav> -->
-          <ul class="header__nav">
-            <li class="header__nav--item">
-              <button class="btn nav__btn nav__btn--active">
-                <span>01</span> Home
-              </button>
+        <!-- <nav class="nav-mobile"> -->
+        <nav class="navigation navigation__header">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <button class="btn nav__btn"><span>01</span> Home</button>
             </li>
-            <li class="header__nav--item">
-              <button class="btn nav__btn nav__btn--home">
+            <li class="navigation__list--item">
+              <button class="btn nav__btn nav__btn--active">
                 <span>02</span> Destination
               </button>
             </li>
-            <li class="header__nav--item">
-              <button class="btn nav__btn nav__btn--home">
-                <span>03</span> Crew
-              </button>
+            <li class="navigation__list--item">
+              <button class="btn nav__btn"><span>03</span> Crew</button>
             </li>
-            <li class="header__nav--item">
-              <button class="btn nav__btn nav__btn--home">
-                <span>04</span> Technology
-              </button>
+            <li class="navigation__list--item">
+              <button class="btn nav__btn"><span>04</span> Technology</button>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-home">
+      <!-- ////////////////////////////// -->
+      <!-- Main-home -->
+
+      <!-- <main class="main-home">
         <div class="main-home__description">
           <h5 class="heading-5">So, you want to travel to</h5>
           <h1 class="heading-1">space</h1>
@@ -101,6 +101,59 @@
         </div>
         <div class="explore">
           <button class="explore__btn">Explore</button>
+        </div>
+      </main> -->
+
+      <!-- ////////////////////////////// -->
+      <!-- main Destination -- MOON -->
+      <main class="main main-destination main-destination--moon">
+        <div class="title">
+          <h5 class="heading-5"><span>01</span> Pick your destination</h5>
+          <div class="img img-destination">
+            <img
+              src="./src/img/destination/image-moon.png"
+              alt="Image of moon"
+            />
+          </div>
+        </div>
+
+        <div class="description">
+          <nav class="navigation navigation--destination">
+            <ul class="navigation__list">
+              <li class="navigation__list--item">
+                <button class="btn nav__btn nav__btn--active">Moon</button>
+              </li>
+              <li class="navigation__list--item">
+                <button class="btn nav__btn">Mars</button>
+              </li>
+              <li class="navigation__list--item">
+                <button class="btn nav__btn">Europa</button>
+              </li>
+              <li class="navigation__list--item">
+                <button class="btn nav__btn">Titan</button>
+              </li>
+            </ul>
+          </nav>
+
+          <h1 class="heading-1 tablet">Moon</h1>
+
+          <p class="body-text">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+
+          <div class="details">
+            <div class="detail detail__distance">
+              <p class="subheading subheading--2">Avg. distance</p>
+              <p class="subheading subheading--1">384,400 km</p>
+            </div>
+            <div class="detail detail__travel-time">
+              <p class="subheading subheading--2">Est. travel time</p>
+              <p class="subheading subheading--1">3 days</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>

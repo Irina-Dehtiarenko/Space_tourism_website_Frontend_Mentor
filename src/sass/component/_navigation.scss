@@ -1,0 +1,19 @@
+.navigation {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 2rem;
+    padding: 0 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 5rem;
+    }
+
+    list-style: none;
+    z-index: 1;
+
+    &--item {
+      height: 100%;
+    }
+  }
+}

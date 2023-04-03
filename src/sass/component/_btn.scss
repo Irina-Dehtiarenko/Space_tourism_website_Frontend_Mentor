@@ -10,6 +10,10 @@
   letter-spacing: 2.7px;
   border: none;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5rem 0;
+  }
+
   &:hover {
     border-bottom: 1.5px solid $color-light;
     cursor: pointer;

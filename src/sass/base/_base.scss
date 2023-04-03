@@ -24,11 +24,11 @@ html {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh;
-
-  @media only screen and (max-width: $bp-large) {
-    grid-template-rows: 20vh max-content;
-  }
+  grid-template-rows: repeat(2, max-content);
+  background-size: cover;
+  // @media only screen and (max-width: $bp-large) {
+  //   grid-template-rows: 20vh max-content;
+  // }
 }
 
 span {

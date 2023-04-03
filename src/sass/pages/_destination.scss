@@ -1,0 +1,7 @@
+.container-destination-page {
+  background-image: url(../img/destination/background-destination-desktop.jpg);
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url(../img/destination/background-destination-tablet.jpg);
+  }
+}

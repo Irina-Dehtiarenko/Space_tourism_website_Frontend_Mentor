@@ -3,15 +3,44 @@
   grid-template-columns: min-content 1fr max-content;
   align-items: center;
 
+  margin: 2rem 0 5rem 0;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 0 0 5rem 0;
+  }
+
   @media only screen and (max-width: $bp-small) {
     align-items: start;
+  }
+
+  .navigation__header {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+
+    &--item {
+      button {
+        @media only screen and (max-width: $bp-small) {
+          font-size: 2rem;
+        }
+
+        span {
+          @media only screen and (max-width: $bp-large) {
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   &__logo-img {
     margin-left: 3rem;
 
     @media only screen and (max-width: $bp-small) {
-      margin-top: 6rem;
+      margin-top: 3rem;
     }
   }
 
@@ -24,37 +53,6 @@
 
     @media only screen and (max-width: $bp-largest) {
       background-color: transparent;
-    }
-  }
-
-  &__nav {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    grid-gap: 2rem;
-    padding: 0 10rem;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-    list-style: none;
-    z-index: 1;
-
-    @media only screen and (max-width: $bp-small) {
-      display: none;
-    }
-
-    &--item {
-      height: 100%;
-
-      button {
-        @media only screen and (max-width: $bp-small) {
-          font-size: 2rem;
-        }
-
-        span {
-          @media only screen and (max-width: $bp-large) {
-            display: none;
-          }
-        }
-      }
     }
   }
 
@@ -79,7 +77,7 @@
       margin-top: 1rem;
 
       @media only screen and (max-width: $bp-small) {
-        margin-top: 9rem;
+        margin-top: 5rem;
       }
 
       &::before,
