@@ -54,6 +54,9 @@ span {
   font-weight: 300;
   letter-spacing: 4.75px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 34.375em) {
+    .heading-5 {
+      font-size: 3rem; } }
   @media only screen and (max-width: 25em) {
     .heading-5 {
       font-size: 2rem; } }
