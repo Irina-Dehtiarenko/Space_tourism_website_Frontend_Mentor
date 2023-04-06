@@ -4,4 +4,23 @@
   @media only screen and (max-width: $bp-large) {
     background-image: url(../img/destination/background-destination-tablet.jpg);
   }
+
+  .title .img {
+    padding-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 34rem;
+      margin-top: -10rem;
+      padding-bottom: 0;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 44.5rem;
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 70vw;
+    }
+  }
 }

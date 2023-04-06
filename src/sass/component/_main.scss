@@ -8,10 +8,12 @@
   // }
 
   display: grid;
-  grid-template-columns: min-content 30vw;
+  // grid-template-columns: min-content 30vw;
+
   justify-content: center;
   align-items: center;
   grid-gap: 10rem;
+  // min-height: 100vh;
 
   @media only screen and (max-width: $bp-largest) {
     grid-gap: 5rem;
@@ -20,9 +22,20 @@
   @media only screen and (max-width: $bp-large) {
     // grid-template-columns: max-content;
     grid-template-columns: 80vw;
+    grid-column: 1/-1;
     grid-gap: 3rem;
     margin-top: 3rem;
     text-align: center;
+  }
+
+  .heading-5 {
+    justify-self: start;
+    align-self: start;
+    grid-column: 1/-1;
+
+    @media only screen and (max-width: $bp-large) {
+      justify-self: start;
+    }
   }
 
   .title {
@@ -47,33 +60,7 @@
     //   grid-gap: 5rem;
     // }
 
-    .heading-5 {
-      justify-self: start;
-      align-self: start;
-
-      @media only screen and (max-width: $bp-large) {
-        justify-self: center;
-      }
-    }
-
     .img {
-      padding-bottom: 4rem;
-
-      @media only screen and (max-width: $bp-largest) {
-        width: 34rem;
-        margin-top: -10rem;
-        padding-bottom: 0;
-      }
-
-      @media only screen and (max-width: $bp-large) {
-        width: 44.5rem;
-        margin-top: 0;
-      }
-
-      @media only screen and (max-width: $bp-small) {
-        width: 70vw;
-      }
-
       img {
         width: 100%;
         // height: 100%;
@@ -134,12 +121,6 @@
 
         @media only screen and (max-width: $bp-small) {
           grid-gap: 1.5rem;
-        }
-
-        &__distance {
-        }
-
-        &__travel-time {
         }
       }
     }
