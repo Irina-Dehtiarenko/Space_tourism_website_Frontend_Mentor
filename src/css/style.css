@@ -45,7 +45,10 @@ span {
   font-size: 5.6rem; }
 
 .heading-4 {
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.5; }
 
 .heading-5 {
   font-size: 2.8rem;
@@ -283,16 +286,47 @@ span {
       grid-column: 1/-1;
       grid-row: 1/2; }
     .container-crew-page .main .description {
+      display: grid;
       grid-row: 2/-1;
       grid-column: 1/2;
       justify-self: start;
       align-self: start; }
+      @media only screen and (max-width: 56.25rem) {
+        .container-crew-page .main .description {
+          grid-row: 2/3; } }
       @media only screen and (max-width: 34.375em) {
         .container-crew-page .main .description {
-          grid-row: 3/-1; } }
+          grid-row: 3/-1;
+          grid-template-rows: repeat(4, max-content);
+          grid-gap: 4rem; } }
       .container-crew-page .main .description .body-text {
         border-bottom: none; }
+      .container-crew-page .main .description .sliders-btns {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(4, max-content);
+        margin-top: 8rem; }
+        @media only screen and (max-width: 56.25rem) {
+          .container-crew-page .main .description .sliders-btns {
+            justify-self: center; } }
+        @media only screen and (max-width: 34.375em) {
+          .container-crew-page .main .description .sliders-btns {
+            grid-row: 1/2;
+            margin-top: 0; } }
+        .container-crew-page .main .description .sliders-btns .btn-slider {
+          width: 1.5rem;
+          height: 1.5rem;
+          background: #ffffff;
+          border-radius: 50%;
+          opacity: 0.17;
+          transition: all 0.2s; }
+          .container-crew-page .main .description .sliders-btns .btn-slider--active {
+            opacity: 1; }
+          .container-crew-page .main .description .sliders-btns .btn-slider:hover {
+            cursor: pointer;
+            opacity: 0.5; }
     .container-crew-page .main .title {
+      display: grid;
       grid-column: 2/-1;
       grid-row: 1/-1;
       width: 100%;
@@ -303,7 +337,9 @@ span {
           grid-row: 3/-1; } }
       @media only screen and (max-width: 34.375em) {
         .container-crew-page .main .title {
-          grid-row: 2/3; } }
+          grid-row: 2/3;
+          justify-self: center;
+          border-bottom: 2px solid #4f4f4f; } }
       .container-crew-page .main .title .img {
         width: 100%;
         position: absolute;
@@ -313,6 +349,9 @@ span {
           .container-crew-page .main .title .img {
             position: relative;
             width: 50vw; } }
+  @media only screen and (max-width: 56.25rem) and (max-width: 34.375em) {
+    .container-crew-page .main .title .img {
+      margin-bottom: -1px; } }
         .container-crew-page .main .title .img img {
           width: 100%; }
 
