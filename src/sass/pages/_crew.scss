@@ -5,6 +5,10 @@
     background-image: url(../img/crew/background-crew-tablet.jpg);
   }
 
+  @media only screen and (max-width: $bp-small) {
+    background-image: url(../img/crew/background-crew-mobile.jpg);
+  }
+
   .main {
     grid-template-columns: minmax(min-content, 35vw) minmax(32vw, max-content);
     // grid-gap: 5rem;
@@ -49,10 +53,6 @@
         grid-row: 3/-1;
         grid-template-rows: repeat(4, max-content);
         grid-gap: 4rem;
-      }
-
-      .body-text {
-        border-bottom: none;
       }
 
       .sliders-btns {
