@@ -494,13 +494,28 @@
 
         <div class="title">
           <div class="img">
+            <!--  <img
+                alt="Photo 1"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                class="composition__photo composition__photo--p1"
+              /> -->
+
+            <!-- ////////////////////////////////////////////TUTAJ PROBLEM -->
             <img
-              src="./src/img/technology/image-launch-vehicle-portrait.jpg"
               alt="Photo with launch vehicle"
+              srcset="
+                ./src/img/technology/image-launch-vehicle-landscape.jpg,
+                ./src/img/technology/image-launch-vehicle-portrait.jpg
+              "
+              src="./src/img/technology/image-launch-vehicle-portrait.jpg"
             />
+            <!-- ////////////////////////////////////////////TUTAJ PROBLEM -->
           </div>
         </div>
       </main>
+
+      <!-- , (max-width:37.5em) 40vw -->
 
       <!-- ///////////////////////////////////// -->
       <!-- Technology - PORT -->

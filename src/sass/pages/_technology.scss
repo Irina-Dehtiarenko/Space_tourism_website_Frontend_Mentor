@@ -9,6 +9,25 @@
     background-image: url(../img/technology/background-technology-mobile.jpg);
   }
 
+  // .header {
+  //   ////////////////////////////
+  //   /// /////////////////
+  //   grid-gap: 0;
+  //   .navigation {
+  //     @media only screen and (max-width: $bp-large) {
+  //       padding: 0;
+  //       margin-left: -10px;
+
+  //       // padding-inline-start: 0;
+  //     }
+  //     &__list {
+  //       @media only screen and (max-width: $bp-large) {
+  //         padding: 0;
+  //         margin: 0;
+  //       }
+  //     }
+  //   }
+  // }
   .main {
     grid-template-columns: min-content 40vw 32vw;
     justify-content: end;
@@ -16,11 +35,35 @@
     grid-gap: 8rem;
     margin-bottom: 8rem;
 
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr 75vw 1fr;
+      grid-template-rows: repeat(4, max-content);
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr 69vw 1fr;
+    }
+
+    .heading-5 {
+      @media only screen and (max-width: $bp-small) {
+        justify-self: center;
+      }
+    }
+
     .sliders-btns {
       display: grid;
       grid-template-columns: max-content;
       grid-template-rows: repeat(3, max-content);
       grid-gap: 4rem;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-template-rows: max-content;
+        grid-template-columns: repeat(3, max-content);
+        justify-self: center;
+        grid-column: 2/3;
+      }
+
       .btn-slider {
         display: grid;
         justify-content: center;
@@ -47,12 +90,33 @@
 
     .description {
       padding: 0 1vw;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2/3;
+        padding: 0;
+      }
     }
 
     .title {
       width: 100%;
+
+      @media only screen and (max-width: $bp-large) {
+        // justify-self: start;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        // margin-right: -1;
+        // background-size: cover;
+
+        // width: 100vw;
+        // height: auto;
+        // position: absolute;
+        // left: 0;
+      }
+
       .img {
         width: 100%;
+        overflow: hidden;
+
         img {
           width: 100%;
         }
