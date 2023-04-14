@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
   grid-gap: 10rem;
-  // min-height: 100vh;
+  ///////na pewno dla technology
+  min-height: 100vh;
 
   @media only screen and (max-width: $bp-largest) {
     grid-gap: 5rem;
