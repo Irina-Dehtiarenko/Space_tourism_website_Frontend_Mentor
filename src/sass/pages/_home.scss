@@ -4,75 +4,79 @@
   @media only screen and (max-width: $bp-large) {
     background-image: url(../img/home/background-home-tablet.jpg);
   }
-}
 
-.main-home {
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  align-items: center;
-  justify-content: center;
-  grid-gap: 30vw;
-  margin: 5rem auto;
-  z-index: 30;
-
-  @media only screen and (max-width: $bp-largest) {
-    grid-gap: 10vw;
-  }
-
-  @media only screen and (max-width: $bp-large) {
-    grid-template-columns: min-content;
-    grid-template-rows: repeat(2, max-content);
-    align-items: center;
-    grid-gap: 8vw;
-  }
-
-  &__description {
+  .main {
     display: grid;
-    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 35vw);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10vw;
+    min-height: 70vh;
+    margin: 5rem auto;
+    z-index: 30;
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-gap: 10vw;
+    }
 
     @media only screen and (max-width: $bp-large) {
-      text-align: center;
+      grid-template-columns: 70vw;
+      grid-template-rows: repeat(2, max-content);
+      align-items: center;
+      justify-content: center;
+      grid-gap: 8vw;
     }
 
-    .body-text {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #383b4b;
-    }
-  }
+    &__description {
+      display: grid;
+      grid-gap: 3rem;
 
-  h1 {
-    padding-top: 2rem;
-  }
-
-  .explore {
-    @media only screen and (max-width: $bp-large) {
-      text-align: center;
-    }
-
-    &__btn {
-      width: 27.4rem;
-      height: 27.4rem;
-      margin-top: 8rem;
-      background-color: $color-lighter;
-      color: $color-primary;
-      font-size: 3.2rem;
-      font-family: $text-large;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 50%;
-      z-index: 20;
-      transition: all 0.4s;
-
-      @media only screen and (max-width: $bp-small) {
-        width: 20rem;
-        height: 20rem;
+      @media only screen and (max-width: $bp-large) {
+        text-align: center;
       }
-      &:hover {
-        outline: 10rem solid rgba(255, 255, 255, 0.1);
-        cursor: pointer;
+
+      .body-text {
+        padding-bottom: 4rem;
+        border-bottom: 2px solid #383b4b;
+      }
+    }
+
+    h1 {
+      padding-top: 2rem;
+    }
+
+    .explore {
+      justify-self: end;
+
+      @media only screen and (max-width: $bp-large) {
+        justify-self: center;
+      }
+
+      &__btn {
+        width: 27.4rem;
+        height: 27.4rem;
+        margin-top: 8rem;
+        background-color: $color-lighter;
+        color: $color-primary;
+        font-size: 3.2rem;
+        font-family: $text-large;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 50%;
+        z-index: 20;
+        transition: all 0.4s;
 
         @media only screen and (max-width: $bp-small) {
-          outline: 7rem solid rgba(255, 255, 255, 0.1);
+          width: 20rem;
+          height: 20rem;
+        }
+        &:hover {
+          outline: 10rem solid rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+
+          @media only screen and (max-width: $bp-small) {
+            outline: 7rem solid rgba(255, 255, 255, 0.1);
+          }
         }
       }
     }

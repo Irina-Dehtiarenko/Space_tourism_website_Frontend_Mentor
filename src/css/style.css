@@ -105,10 +105,7 @@ span {
       margin: 0 0 5rem 0; } }
   @media only screen and (max-width: 34.375em) {
     .header {
-      align-items: start;
-      position: fixed;
-      top: 0;
-      right: 0; } }
+      align-items: start; } }
   .header .navigation__header {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px); }
@@ -326,61 +323,64 @@ span {
   @media only screen and (max-width: 56.25rem) {
     .container-home-page {
       background-image: url(../img/home/background-home-tablet.jpg); } }
-
-.main-home {
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  align-items: center;
-  justify-content: center;
-  grid-gap: 30vw;
-  margin: 5rem auto;
-  z-index: 30; }
-  @media only screen and (max-width: 68.75em) {
-    .main-home {
-      grid-gap: 10vw; } }
-  @media only screen and (max-width: 56.25rem) {
-    .main-home {
-      grid-template-columns: min-content;
-      grid-template-rows: repeat(2, max-content);
-      align-items: center;
-      grid-gap: 8vw; } }
-  .main-home__description {
+  .container-home-page .main {
     display: grid;
-    grid-gap: 3rem; }
+    grid-template-columns: repeat(2, 35vw);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10vw;
+    min-height: 70vh;
+    margin: 5rem auto;
+    z-index: 30; }
+    @media only screen and (max-width: 68.75em) {
+      .container-home-page .main {
+        grid-gap: 10vw; } }
     @media only screen and (max-width: 56.25rem) {
-      .main-home__description {
-        text-align: center; } }
-    .main-home__description .body-text {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #383b4b; }
-  .main-home h1 {
-    padding-top: 2rem; }
-  @media only screen and (max-width: 56.25rem) {
-    .main-home .explore {
-      text-align: center; } }
-  .main-home .explore__btn {
-    width: 27.4rem;
-    height: 27.4rem;
-    margin-top: 8rem;
-    background-color: #ffffff;
-    color: #0b0d17;
-    font-size: 3.2rem;
-    font-family: "Bellefair", serif;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 50%;
-    z-index: 20;
-    transition: all 0.4s; }
-    @media only screen and (max-width: 34.375em) {
-      .main-home .explore__btn {
-        width: 20rem;
-        height: 20rem; } }
-    .main-home .explore__btn:hover {
-      outline: 10rem solid rgba(255, 255, 255, 0.1);
-      cursor: pointer; }
-      @media only screen and (max-width: 34.375em) {
-        .main-home .explore__btn:hover {
-          outline: 7rem solid rgba(255, 255, 255, 0.1); } }
+      .container-home-page .main {
+        grid-template-columns: 70vw;
+        grid-template-rows: repeat(2, max-content);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 8vw; } }
+    .container-home-page .main__description {
+      display: grid;
+      grid-gap: 3rem; }
+      @media only screen and (max-width: 56.25rem) {
+        .container-home-page .main__description {
+          text-align: center; } }
+      .container-home-page .main__description .body-text {
+        padding-bottom: 4rem;
+        border-bottom: 2px solid #383b4b; }
+    .container-home-page .main h1 {
+      padding-top: 2rem; }
+    .container-home-page .main .explore {
+      justify-self: end; }
+      @media only screen and (max-width: 56.25rem) {
+        .container-home-page .main .explore {
+          justify-self: center; } }
+      .container-home-page .main .explore__btn {
+        width: 27.4rem;
+        height: 27.4rem;
+        margin-top: 8rem;
+        background-color: #ffffff;
+        color: #0b0d17;
+        font-size: 3.2rem;
+        font-family: "Bellefair", serif;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 50%;
+        z-index: 20;
+        transition: all 0.4s; }
+        @media only screen and (max-width: 34.375em) {
+          .container-home-page .main .explore__btn {
+            width: 20rem;
+            height: 20rem; } }
+        .container-home-page .main .explore__btn:hover {
+          outline: 10rem solid rgba(255, 255, 255, 0.1);
+          cursor: pointer; }
+          @media only screen and (max-width: 34.375em) {
+            .container-home-page .main .explore__btn:hover {
+              outline: 7rem solid rgba(255, 255, 255, 0.1); } }
 
 .container-technology-page {
   background-image: url(../img/technology/background-technology-desktop.jpg); }
@@ -457,7 +457,7 @@ span {
   justify-content: center;
   align-items: center;
   grid-gap: 10rem;
-  min-height: 100vh; }
+  min-height: 90vh; }
   @media only screen and (max-width: 68.75em) {
     .main {
       grid-gap: 5rem; } }
