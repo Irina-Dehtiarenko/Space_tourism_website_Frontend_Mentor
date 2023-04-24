@@ -98,9 +98,12 @@
       display: grid;
       grid-column: 2/-1;
       grid-row: 1/-1;
-
+      justify-content: center;
+      // text-align: center;
+      // align-items: center;
       width: 100%;
-      position: relative;
+      border-bottom: 2px solid #4f4f4f;
+      // position: relative;
 
       @media only screen and (max-width: $bp-large) {
         grid-column: 1/-1;
@@ -112,19 +115,20 @@
       @media only screen and (max-width: $bp-small) {
         grid-row: 2/3;
         justify-self: center;
-        border-bottom: 2px solid #4f4f4f;
+        // border-bottom: 2px solid #4f4f4f;
       }
 
       .img {
-        // display: grid;
+        display: grid;
+        // justify-content: end;
         // justify-self: end;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        // text-align: center;
+        align-items: center;
+        // width: 100%;
+        // position: relative;
         @media only screen and (max-width: $bp-large) {
           // display: block;
-          position: relative;
+          // position: relative;
           width: 50vw;
 
           @media only screen and (max-width: $bp-small) {
@@ -132,8 +136,19 @@
           }
         }
         img {
+          // display: grid;
+          // justify-content: end;
+          // align-items: end;
+          // justify-self: end;
+          // align-self: end;
+          // width: 100%;
+
           // text-align: end;
-          width: 100%;
+          // width: 100%;
+          // height: 100%;
+          // position: absolute;
+          // bottom: 0;
+          // right: 0;
           // height: 100%;
         }
       }

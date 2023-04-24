@@ -268,8 +268,9 @@ span {
       display: grid;
       grid-column: 2/-1;
       grid-row: 1/-1;
+      justify-content: center;
       width: 100%;
-      position: relative; }
+      border-bottom: 2px solid #4f4f4f; }
       @media only screen and (max-width: 56.25rem) {
         .container-crew-page .main .title {
           grid-column: 1/-1;
@@ -278,22 +279,16 @@ span {
       @media only screen and (max-width: 34.375em) {
         .container-crew-page .main .title {
           grid-row: 2/3;
-          justify-self: center;
-          border-bottom: 2px solid #4f4f4f; } }
+          justify-self: center; } }
       .container-crew-page .main .title .img {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0; }
+        display: grid;
+        align-items: center; }
         @media only screen and (max-width: 56.25rem) {
           .container-crew-page .main .title .img {
-            position: relative;
             width: 50vw; } }
   @media only screen and (max-width: 56.25rem) and (max-width: 34.375em) {
     .container-crew-page .main .title .img {
       margin-bottom: -1px; } }
-        .container-crew-page .main .title .img img {
-          width: 100%; }
 
 .container-destination-page {
   background-image: url(../img/destination/background-destination-desktop.jpg); }
